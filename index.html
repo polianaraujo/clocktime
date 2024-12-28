@@ -11,9 +11,13 @@
         <h1>Relógio de estudos</h1>
     </header>
     <main>
-        <p>texto.</p>
-        <button id="actionButton">Clique aqui</button>
-        <p id="response"></p>
+        <p>Selecione um fuso horário para ver a hora atual:</p>
+        <select id="timezoneSelect">
+            <option value="UTC">UTC</option>
+            <option value="America/Sao_Paulo">São Paulo (GMT-3)</option>
+            <option value="Asia/Tokyo">Tóquio (GMT+9)</option>
+        </select>
+        <div id="clock" class="clock">00:00:00</div>
     </main>
     <footer>
         <p>&copy; 2024 Poliana Ellen de Araújo</p>
