@@ -1,28 +1,68 @@
 /* Estilização geral do corpo da página */
+ /* body { */
+    /* font-family: 'Open Sans', sans-serif; Define uma fonte limpa e padrão */
+    /* line-height: 1.6;               Ajusta o espaçamento entre as linhas */
+    /* margin: 0;                      Remove as margens padrão */
+    /* padding: 0;                     Remove o preenchimento padrão */
+    /* background-color: #e1e1e1;    Define a cor de fundo como cinza claro */
+    /* color: #333;                  Define a cor do texto como cinza escuro */
+    /* display: flex;                  Usa Flexbox para alinhamento centralizado */
+    /* flex-direction: column;         Alinha os elementos em uma coluna */
+    /* justify-content: center;        Centraliza os elementos verticalmente */
+    /* align-items: center;            Centraliza os elementos horizontalmente */
+    /* min-height: 100vh;              Garante que o corpo ocupe toda a altura da tela */
+    /* background-image: url('background1.jpg'); Fundo padrão */
+    /* background-size: cover; */
+    /* background-position: center; */
+/* } */
+
+/* Estilizando o corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define uma fonte limpa e padrão */
-    line-height: 1.6;               /* Ajusta o espaçamento entre as linhas */
-    margin: 0;                      /* Remove as margens padrão */
-    padding: 0;                     /* Remove o preenchimento padrão */
-    background-color: #e1e1e1;    /* Define a cor de fundo como cinza claro */
-    color: #333;                  /* Define a cor do texto como cinza escuro */
-    display: flex;                  /* Usa Flexbox para alinhamento centralizado */
-    flex-direction: column;         /* Alinha os elementos em uma coluna */
-    justify-content: center;        /* Centraliza os elementos verticalmente */
-    align-items: center;            /* Centraliza os elementos horizontalmente */
-    min-height: 100vh;              /* Garante que o corpo ocupe toda a altura da tela */
-    background-image: url('background1.jpg'); /* Fundo padrão */
-    background-size: cover;
-    background-position: center;
+    font-family: 'Digital-7', sans-serif; /* Fonte Digital-7 para o efeito de números */
+    background-color: #333;              /* Fundo escuro */
+    color: #fff;                         /* Cor do texto em branco */
+    display: flex;                       
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
 }
+
+/* Estilizando o relógio para parecer com um flip clock */
+.clock {
+    font-size: 120px;                    /* Tamanho grande da fonte */
+    letter-spacing: 5px;                 /* Espaçamento entre os números */
+    transform: perspective(600px) rotateX(20deg); /* Efeito 3D para simular flip */
+    display: inline-block;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Efeito de sombra no texto */
+}
+
+/* Ajustando a animação (se necessário) para simular o "flip" */
+@keyframes flip {
+    0% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+.clock {
+    animation: flip 1s infinite;  /* Animação do flip para os números */
+}
+
 
 /* Estilização do cabeçalho */
 header {
     background: #0073e6;          /* Define o fundo azul do cabeçalho */
     color: rgb(213, 213, 213);    /* Define a cor do texto como branco */
-    padding: 10px 0;                /* Adiciona espaçamento acima e abaixo do texto */
+    padding: 0px 0;                /* Adiciona espaçamento acima e abaixo do texto */
     text-align: center;             /* Centraliza o texto no cabeçalho */
-    width: 100%;                    /* Garante que o cabeçalho ocupe toda a largura da página */
+    width: 60%;                    /* Garante que o cabeçalho ocupe toda a largura da página */
 }
 
 /* Estilização do conteúdo principal */
@@ -39,12 +79,12 @@ select {
 }
 
 /* Estilização do relógio */
-.clock {
-    font-size: 80px;                /* Define um tamanho grande para o texto do relógio */
-    font-weight: bold;              /* Deixa o texto em negrito */
-    margin: 20px 0;                 /* Adiciona espaçamento externo acima e abaixo */
-    color: #0073e6;               /* Define a cor azul para o texto do relógio */
-}
+/* .clock { */
+    /* font-size: 80px;                Define um tamanho grande para o texto do relógio */
+    /* font-weight: bold;              Deixa o texto em negrito */
+    /* margin: 20px 0;                 Adiciona espaçamento externo acima e abaixo */
+    /* color: #0073e6;               Define a cor azul para o texto do relógio */
+/* } */
 
 /* Estilização do rodapé */
 footer {

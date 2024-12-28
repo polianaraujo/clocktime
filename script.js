@@ -35,3 +35,7 @@ document.body.style.backgroundImage = `url('wallpapers/background1.jpg')`;
 // Atualizando o relógio a cada segundo
 setInterval(updateClock, 1000);
 updateClock();
+
+document.getElementById('timezoneSelect').addEventListener('change', function() {
+    updateClock();
+});

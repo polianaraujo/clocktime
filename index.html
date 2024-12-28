@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,10 @@
 <body>
     <header>
         <h1>Relógio de estudos</h1>
-    </header>
+    </header> -->
 
     <!-- Este é o main onde o conteúdo principal vai -->
-    <main>
+    <!-- <main>
     <p>Selecione um fuso horário para ver a hora atual:</p>
     <select id="timezoneSelect">
         <option value="UTC">UTC</option>
@@ -21,9 +21,9 @@
     </select>
 
     <p>Selecione um fundo para o relógio:</p>
-    <select id="backgroundSelect">
-        <option value="">Escolha uma imagem de fundo</option> <!-- Opção vazia inicial -->
-        <option value="wallpapers/wallhaven1.jpg">Imagem 1</option>
+    <select id="backgroundSelect"> -->
+        <!-- <option value="">Escolha uma imagem de fundo</option> Opção vazia inicial -->
+        <!-- <option value="wallpapers/wallhaven1.jpg">Imagem 1</option>
         <option value="wallpapers/wallhaven2.jpg">Imagem 2</option>
         <option value="wallpapers/wallhaven3.jpg">Imagem 3</option>
         <option value="wallpapers/wallhaven4.jpg">Imagem 4</option>
@@ -39,5 +39,72 @@
     </footer>
 
     <script src="script.js"></script>
+</body>-->
+<!-- </html>  -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio de Estudos</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+    <header>
+        <h1>Relógio de Estudos</h1>
+    </header>
+
+    <main>
+        <p>Selecione um fuso horário para ver a hora atual:</p>
+        <select id="timezoneSelect">
+            <option value="UTC">UTC</option>
+            <option value="America/Sao_Paulo">São Paulo (GMT-3)</option>
+            <option value="Asia/Tokyo">Tóquio (GMT+9)</option>
+        </select>
+
+        <p>Selecione um fundo para o relógio:</p>
+        <select id="backgroundSelect">
+            <option value="">Escolha uma imagem de fundo</option>
+            <option value="wallpapers/wallhaven1.jpg">Imagem 1</option>
+            <option value="wallpapers/wallhaven2.jpg">Imagem 2</option>
+            <option value="wallpapers/wallhaven3.jpg">Imagem 3</option>
+            <option value="wallpapers/wallhaven4.jpg">Imagem 4</option>
+            <option value="wallpapers/wallhaven5.jpg">Imagem 5</option>
+        </select>
+
+        <div class="clock">
+            <div class="flip-clock-digit" id="hour-tens">
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+            </div>
+            <div class="flip-clock-digit" id="hour-ones">
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="flip-clock-digit" id="minute-tens">
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+            </div>
+            <div class="flip-clock-digit" id="minute-ones">
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="flip-clock-digit" id="second-tens">
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+            </div>
+            <div class="flip-clock-digit" id="second-ones">
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scrypt.js"></script>
 </body>
 </html>
