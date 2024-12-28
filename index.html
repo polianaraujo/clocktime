@@ -10,18 +10,34 @@
     <header>
         <h1>Relógio de estudos</h1>
     </header>
+
+    <!-- Este é o main onde o conteúdo principal vai -->
     <main>
-        <p>Selecione um fuso horário para ver a hora atual:</p>
-        <select id="timezoneSelect">
-            <option value="UTC">UTC</option>
-            <option value="America/Sao_Paulo">São Paulo (GMT-3)</option>
-            <option value="Asia/Tokyo">Tóquio (GMT+9)</option>
-        </select>
-        <div id="clock" class="clock">00:00:00</div>
-    </main>
+    <p>Selecione um fuso horário para ver a hora atual:</p>
+    <select id="timezoneSelect">
+        <option value="UTC">UTC</option>
+        <option value="America/Sao_Paulo">São Paulo (GMT-3)</option>
+        <option value="Asia/Tokyo">Tóquio (GMT+9)</option>
+    </select>
+
+    <p>Selecione um fundo para o relógio:</p>
+    <select id="backgroundSelect">
+        <option value="">Escolha uma imagem de fundo</option> <!-- Opção vazia inicial -->
+        <option value="wallpapers/wallhaven1.jpg">Imagem 1</option>
+        <option value="wallpapers/wallhaven2.jpg">Imagem 2</option>
+        <option value="wallpapers/wallhaven3.jpg">Imagem 3</option>
+        <option value="wallpapers/wallhaven4.jpg">Imagem 4</option>
+        <option value="wallpapers/wallhaven5.jpg">Imagem 5</option>
+    </select>
+
+    <div id="clock" class="clock">00:00:00</div>
+</main>
+
+
     <footer>
         <p>&copy; 2024 Poliana Ellen de Araújo</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

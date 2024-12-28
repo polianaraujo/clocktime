@@ -4,19 +4,22 @@ body {
     line-height: 1.6;               /* Ajusta o espaçamento entre as linhas */
     margin: 0;                      /* Remove as margens padrão */
     padding: 0;                     /* Remove o preenchimento padrão */
-    background-color: #858585;    /* Define a cor de fundo como cinza claro */
+    background-color: #e1e1e1;    /* Define a cor de fundo como cinza claro */
     color: #333;                  /* Define a cor do texto como cinza escuro */
     display: flex;                  /* Usa Flexbox para alinhamento centralizado */
     flex-direction: column;         /* Alinha os elementos em uma coluna */
     justify-content: center;        /* Centraliza os elementos verticalmente */
     align-items: center;            /* Centraliza os elementos horizontalmente */
     min-height: 100vh;              /* Garante que o corpo ocupe toda a altura da tela */
+    background-image: url('background1.jpg'); /* Fundo padrão */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Estilização do cabeçalho */
 header {
     background: #0073e6;          /* Define o fundo azul do cabeçalho */
-    color: rgb(197, 181, 181);    /* Define a cor do texto como branco */
+    color: rgb(213, 213, 213);    /* Define a cor do texto como branco */
     padding: 10px 0;                /* Adiciona espaçamento acima e abaixo do texto */
     text-align: center;             /* Centraliza o texto no cabeçalho */
     width: 100%;                    /* Garante que o cabeçalho ocupe toda a largura da página */
