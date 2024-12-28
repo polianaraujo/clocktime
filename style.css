@@ -1,47 +1,53 @@
+/* Estilização geral do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: hsl(0, 0%, 62%);
-    color: #979797;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Define uma fonte limpa e padrão */
+    line-height: 1.6;               /* Ajusta o espaçamento entre as linhas */
+    margin: 0;                      /* Remove as margens padrão */
+    padding: 0;                     /* Remove o preenchimento padrão */
+    background-color: #858585;    /* Define a cor de fundo como cinza claro */
+    color: #333;                  /* Define a cor do texto como cinza escuro */
+    display: flex;                  /* Usa Flexbox para alinhamento centralizado */
+    flex-direction: column;         /* Alinha os elementos em uma coluna */
+    justify-content: center;        /* Centraliza os elementos verticalmente */
+    align-items: center;            /* Centraliza os elementos horizontalmente */
+    min-height: 100vh;              /* Garante que o corpo ocupe toda a altura da tela */
 }
 
+/* Estilização do cabeçalho */
 header {
-    background: #0073e6;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
+    background: #0073e6;          /* Define o fundo azul do cabeçalho */
+    color: rgb(197, 181, 181);    /* Define a cor do texto como branco */
+    padding: 10px 0;                /* Adiciona espaçamento acima e abaixo do texto */
+    text-align: center;             /* Centraliza o texto no cabeçalho */
+    width: 100%;                    /* Garante que o cabeçalho ocupe toda a largura da página */
 }
 
+/* Estilização do conteúdo principal */
 main {
-    padding: 20px;
-    text-align: center;
+    padding: 20px;                  /* Adiciona espaçamento interno em todos os lados */
+    text-align: center;             /* Centraliza o conteúdo do texto */
 }
 
+/* Estilização do seletor de fusos horários */
 select {
-    font-size: 16px;
-    padding: 10px;
-    margin: 20px 0;
+    font-size: 16px;                /* Define o tamanho da fonte do seletor */
+    padding: 10px;                  /* Adiciona espaçamento interno no seletor */
+    margin: 20px 0;                 /* Adiciona espaçamento externo acima e abaixo */
 }
 
+/* Estilização do relógio */
 .clock {
-    font-size: 250px;
-    font-weight: bold;
-    margin: 40px 0;
-    color: #0073e6;
+    font-size: 80px;                /* Define um tamanho grande para o texto do relógio */
+    font-weight: bold;              /* Deixa o texto em negrito */
+    margin: 20px 0;                 /* Adiciona espaçamento externo acima e abaixo */
+    color: #0073e6;               /* Define a cor azul para o texto do relógio */
 }
 
+/* Estilização do rodapé */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: white;
-    width: 100%;
+    text-align: center;             /* Centraliza o texto do rodapé */
+    padding: 10px 0;                /* Adiciona espaçamento acima e abaixo do texto */
+    background: #333;             /* Define o fundo cinza escuro */
+    color: white;                 /* Define a cor do texto como branco */
+    width: 100%;                    /* Garante que o rodapé ocupe toda a largura da página */
 }
