@@ -8,17 +8,14 @@ function updateClock() {
     const minutes = currentTime.getMinutes();
     const seconds = currentTime.getSeconds();
 
-    // Função para formatar números como dois dígitos
-    const formatTime = (time) => time < 10 ? `0${time}` : time;
+    // Função para formatar os dígitos
+    const getDigits = (num) => [Math.floor(num / 10), num % 10];
 
-    const hourTens = Math.floor(hours / 10);
-    const hourOnes = hours % 10;
-    const minuteTens = Math.floor(minutes / 10);
-    const minuteOnes = minutes % 10;
-    const secondTens = Math.floor(seconds / 10);
-    const secondOnes = seconds % 10;
+    // Atualizando os dígitos do relógio
+    const [hourTens, hourOnes] = getDigits(hours);
+    const [minuteTens, minuteOnes] = getDigits(minutes);
+    const [secondTens, secondOnes] = getDigits(seconds);
 
-    // Atualizando os elementos de hora, minuto e segundo
     updateDigit('hour-tens', hourTens);
     updateDigit('hour-ones', hourOnes);
     updateDigit('minute-tens', minuteTens);
@@ -27,16 +24,30 @@ function updateClock() {
     updateDigit('second-ones', secondOnes);
 }
 
-function updateDigit(id, value) {
+function updateDigit(id, newValue) {
     const digitElement = document.getElementById(id);
     const top = digitElement.querySelector('.top');
     const bottom = digitElement.querySelector('.bottom');
 
-    if (top.textContent !== value.toString()) {
-        top.classList.add('flip');
-        bottom.classList.add('flip');
-        top.textContent = value;
-        bottom.textContent = value;
+    if (top.textContent !== newValue.toString()) {
+        // Animação Flip
+        const prevValue = top.textContent;
+        const flipAnimation = document.createElement('div');
+        flipAnimation.className = 'flip-animation';
+        flipAnimation.innerHTML = `
+            <div class="top">${prevValue}</div>
+            <div class="bottom">${newValue}</div>
+        `;
+
+        digitElement.innerHTML = ''; // Limpa os dígitos antigos
+        digitElement.appendChild(flipAnimation);
+
+        setTimeout(() => {
+            digitElement.innerHTML = `
+                <div class="top">${newValue}</div>
+                <div class="bottom">${newValue}</div>
+            `;
+        }, 500); // Duração da animação
     }
 }
 
